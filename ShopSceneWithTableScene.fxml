@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="577.0" prefWidth="765.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="Mainpkg.ShopSceneWithTableSceneController">
+   <children>
+      <Label layoutX="325.0" layoutY="32.0" text="SHOP" textFill="#650909">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <TableView layoutX="55.0" layoutY="237.0" prefHeight="200.0" prefWidth="648.0">
+        <columns>
+          <TableColumn prefWidth="97.0" text="C1" />
+          <TableColumn prefWidth="93.0" text="C2" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
