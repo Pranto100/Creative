@@ -12,5 +12,6 @@
       <Button layoutX="74.0" layoutY="176.0" mnemonicParsing="false" onAction="#ondmCattleImportButtonClicked" prefHeight="32.0" prefWidth="100.0" text="Feedback" />
       <Button layoutX="74.0" layoutY="217.0" mnemonicParsing="false" onAction="#ondmReportButtonClicked" prefHeight="32.0" prefWidth="100.0" text="Report" />
       <Button layoutX="74.0" layoutY="260.0" mnemonicParsing="false" onAction="#ondmOrderButtonClicked" prefHeight="32.0" prefWidth="100.0" text="Customers" />
+      <Label layoutX="367.0" layoutY="55.0" text="Logged in as: Quality Control Manager" />
    </children>
 </AnchorPane>
