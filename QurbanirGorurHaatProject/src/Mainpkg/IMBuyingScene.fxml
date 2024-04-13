@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="656.0" prefWidth="784.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="Mainpkg.IMBuyingSceneController">
+   <children>
+      <TableView layoutX="29.0" layoutY="23.0" prefHeight="200.0" prefWidth="565.0">
+        <columns>
+          <TableColumn prefWidth="88.0" text="Product no" />
+          <TableColumn prefWidth="158.0" text="product name" />
+            <TableColumn prefWidth="128.0" text="Description" />
+            <TableColumn prefWidth="99.0" text="Type" />
+            <TableColumn prefWidth="91.0" text="Price" />
+        </columns>
+      </TableView>
+      <Label layoutX="658.0" layoutY="23.0" prefHeight="109.0" prefWidth="111.0" style="-fx-background-color: red;" text="This is the Product detail that feed supplier will add" textAlignment="RIGHT" wrapText="true" />
+      <Line endX="704.0" endY="-83.0" layoutX="80.0" layoutY="324.0" startX="-80.00001525878906" startY="-83.0" />
+      <TextField layoutX="188.0" layoutY="264.0" prefHeight="31.0" prefWidth="66.0" text="1" />
+      <Label layoutX="67.0" layoutY="264.0" text="Product No:" />
+      <ComboBox layoutX="516.0" layoutY="270.0" prefHeight="31.0" prefWidth="190.0" />
+      <TextArea layoutX="67.0" layoutY="467.0" prefHeight="121.0" prefWidth="296.0" />
+      <Button layoutX="67.0" layoutY="425.0" mnemonicParsing="false" text="Add to Cart" />
+      <TextField layoutX="185.0" layoutY="313.0" prefHeight="31.0" prefWidth="80.0" />
+      <Label layoutX="72.0" layoutY="318.0" text="Price" />
+      <Label layoutX="71.0" layoutY="369.0" text="Quantity" />
+      <TextField layoutX="188.0" layoutY="364.0" prefHeight="31.0" prefWidth="80.0" />
+      <Button layoutX="469.0" layoutY="567.0" mnemonicParsing="false" text="Go to billing" />
+   </children>
+</AnchorPane>
