@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView layoutX="50.0" layoutY="50.0" prefHeight="200.0" prefWidth="428.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Driver ID" />
+          <TableColumn prefWidth="75.0" text="Zone" />
+            <TableColumn prefWidth="75.0" text="Driver ID" />
+            <TableColumn prefWidth="126.0" text="Destination" />
+            <TableColumn prefWidth="75.0" text="Status" />
+        </columns>
+      </TableView>
+      <Label layoutX="50.0" layoutY="278.0" text="Flag IDs" />
+      <TextField fx:id="flagIDTextfield" layoutX="101.0" layoutY="274.0" prefHeight="25.0" prefWidth="74.0" />
+      <Button layoutX="192.0" layoutY="274.0" mnemonicParsing="false" onAction="#onqcmDeliveriesFlagButtonClicked" text="Flag" />
+      <Button layoutX="440.0" layoutY="274.0" mnemonicParsing="false" onAction="#onqcmDeliveriesBackButtonClicked" text="Back" />
+      <Button layoutX="250.0" layoutY="274.0" mnemonicParsing="false" onAction="#onqcmDeliveriesFlagButtonClicked" text="Vehicle" />
+   </children>
+</AnchorPane>

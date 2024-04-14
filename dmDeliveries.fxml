@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="533.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="60.0" layoutY="50.0" text="Delivery Routes" />
+      <ComboBox fx:id="zoneComboBox" layoutX="150.0" layoutY="89.0" onAction="#ondmDeliveriesZoneComboBoxClicked" prefWidth="150.0" promptText="Zone" />
+      <Label layoutX="60.0" layoutY="93.0" text="Delivery Zone" />
+      <Label layoutX="60.0" layoutY="128.0" text="Driver Status" />
+      <Label fx:id="driverStatusLabel" layoutX="150.0" layoutY="128.0" text="Unavailable" />
+      <Button layoutX="339.0" layoutY="243.0" mnemonicParsing="false" onAction="#ondmDeliveriesRequestButtonClicked" prefHeight="37.0" prefWidth="105.0" text="Request Delivery" />
+      <TableView layoutX="61.0" layoutY="358.0" prefHeight="165.0" prefWidth="473.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Driver ID" />
+          <TableColumn prefWidth="75.0" text="Zone" />
+            <TableColumn prefWidth="75.0" text="Delivery ID" />
+            <TableColumn prefWidth="101.0" text="Destination" />
+            <TableColumn prefWidth="71.0" text="Status" />
+        </columns>
+      </TableView>
+      <Label layoutX="60.0" layoutY="166.0" text="Destination:" />
+      <Label layoutX="60.0" layoutY="340.0" text="Available Drivers" />
+      <Button layoutX="339.0" layoutY="83.0" mnemonicParsing="false" onAction="#ondmDeliveriesCostsButtonClicked" prefHeight="37.0" prefWidth="105.0" text="Delivery Costs" />
+      <TextField fx:id="canceldeliveryIDTextfield" layoutX="194.0" layoutY="303.0" prefHeight="25.0" prefWidth="136.0" />
+      <Button layoutX="339.0" layoutY="297.0" mnemonicParsing="false" onAction="#ondmDeliveriesCancelButtonClicked" prefHeight="37.0" prefWidth="105.0" text="Cancel Delivery" />
+      <Label layoutX="133.0" layoutY="166.0" prefHeight="17.0" prefWidth="25.0" text="City" />
+      <RadioButton layoutX="169.0" layoutY="166.0" mnemonicParsing="false" onAction="#dhakaRadioButtonOnClicked" text="Dhaka" />
+      <RadioButton layoutX="238.0" layoutY="166.0" mnemonicParsing="false" onAction="#comillaRadioButtonOnClicked" text="Comilla" />
+      <RadioButton layoutX="309.0" layoutY="166.0" mnemonicParsing="false" onAction="#chittagongRadioButtonOnClicked" text="Chittagong" />
+      <RadioButton layoutX="404.0" layoutY="166.0" mnemonicParsing="false" onAction="#sylhetRadioButtonOnClicked" text="Sylhet" />
+      <Label layoutX="133.0" layoutY="194.0" prefHeight="17.0" prefWidth="54.0" text="Road No" />
+      <TextField fx:id="roadNoTextfield" layoutX="194.0" layoutY="190.0" prefHeight="25.0" prefWidth="136.0" />
+      <Label layoutX="133.0" layoutY="226.0" prefHeight="17.0" prefWidth="54.0" text="House No" />
+      <TextField fx:id="houseNoTextfield" layoutX="194.0" layoutY="222.0" prefHeight="25.0" prefWidth="136.0" />
+      <Label layoutX="133.0" layoutY="258.0" text="Delivery ID" />
+      <TextField fx:id="requestdeliveryIDTextfield" layoutX="194.0" layoutY="254.0" prefHeight="25.0" prefWidth="136.0" />
+      <Label layoutX="133.0" layoutY="307.0" text="Delivery ID" />
+   </children>
+</AnchorPane>
