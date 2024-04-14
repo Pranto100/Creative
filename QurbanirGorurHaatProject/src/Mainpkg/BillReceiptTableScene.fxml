@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="683.0" prefWidth="859.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Mainpkg.BillReceiptTableSceneController">
+   <children>
+      <Label layoutX="347.0" layoutY="35.0" text="Bill" textFill="#9e1717">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="89.0" layoutY="148.0" prefHeight="21.0" prefWidth="101.0" text="ID:" />
+      <TextField layoutX="266.0" layoutY="143.0" />
+      <TextField layoutX="266.0" layoutY="192.0" />
+      <Label layoutX="89.0" layoutY="331.0" text="Total Bill:" />
+      <TextArea layoutX="216.0" layoutY="313.0" prefHeight="5.0" prefWidth="200.0" />
+      <RadioButton layoutX="85.0" layoutY="397.0" mnemonicParsing="false" text="Pick up" />
+      <RadioButton layoutX="85.0" layoutY="435.0" mnemonicParsing="false" text="Send Truck" />
+      <RadioButton layoutX="85.0" layoutY="475.0" mnemonicParsing="false" text="Van" />
+   </children>
+</AnchorPane>
