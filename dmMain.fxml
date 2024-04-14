@@ -12,5 +12,6 @@
       <Button layoutX="64.0" layoutY="168.0" mnemonicParsing="false" onAction="#ondmDeliveriesButtonClicked" prefHeight="32.0" prefWidth="100.0" text="Deliveries" />
       <Button layoutX="64.0" layoutY="210.0" mnemonicParsing="false" onAction="#ondmCattleImportButtonClicked" prefHeight="32.0" prefWidth="100.0" text="Cattle Import" />
       <Button layoutX="64.0" layoutY="251.0" mnemonicParsing="false" onAction="#ondmReportButtonClicked" prefHeight="32.0" prefWidth="100.0" text="Report" />
+      <Label layoutX="387.0" layoutY="45.0" text="Logged in as: Delivery Manager" />
    </children>
 </AnchorPane>
