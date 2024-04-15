@@ -10,5 +10,6 @@
       <Text layoutX="127.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Feedback" wrappingWidth="110.14453125" />
       <Button layoutX="182.0" layoutY="306.0" mnemonicParsing="false" onAction="#BackingOffOnClicked" text="Back" />
       <TextArea layoutX="111.0" layoutY="82.0" prefHeight="200.0" prefWidth="200.0" text="Write Your FeedBack Here" />
+      <Button layoutX="85.0" layoutY="306.0" mnemonicParsing="false" onAction="#SubmittedOnClicked" text="Submit" />
    </children>
 </AnchorPane>

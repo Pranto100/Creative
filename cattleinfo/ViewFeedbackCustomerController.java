@@ -43,7 +43,19 @@ public class ViewFeedbackCustomerController implements Initializable {
     ciOrderstage.setScene(ciOrderscene);
     ciOrderstage.show();
         
-    }{
+    }
+
+    @FXML
+    private void SubmittedOnClicked(ActionEvent event) 
+            throws IOException {
+        
+    FXMLLoader loader;
+        loader = new FXMLLoader(getClass().getResource("ThankYou.fxml"));
+    Parent ciOrdersceneParent = loader.load();
+    Scene ciOrderscene = new Scene(ciOrdersceneParent);
+    Stage ciOrderstage = (Stage)((Node)event.getSource()).getScene().getWindow(); 
+    ciOrderstage.setScene(ciOrderscene);
+    ciOrderstage.show();
     }
     
 }
