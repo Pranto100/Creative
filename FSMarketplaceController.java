@@ -4,12 +4,18 @@
  */
 package Mainpkg;
 
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -85,11 +91,38 @@ public class FSMarketplaceController implements Initializable {
 
     @FXML
     private void writeInBinFileButton(ActionEvent event) {
-        
-    }
+      
+       try{ 
+                FileOutputStream fos = new FileOutputStream("productsave.bin",true);
+                ObjectOutputStream oos = new ObjectOutputStream(fos);
+                for(Product plist: productList)
+                    oos.writeObject(plist);
+                    oos.close();
+            }
+            catch(IOException e){
+                
+            }
+    } 
 
     @FXML
-    private void readFromBinFileButton(ActionEvent event) {
-    }
+    private void readFromBinFileButton(ActionEvent event) throws ClassNotFoundException {
+        ObjectInputStream ois=null;
+         try {
+             Product p;
+             FileInputStream fis = new FileInputStream("productsave.bin");
+             ois = new ObjectInputStream(fis);
+        
+             
+            productListTextArea.setText(null);
+            
+   
+            while(true){
+                p = (Product) ois.readObject();
+                
+                productListTextArea.appendText(p.toString()+"\n");
+                    }
+    }catch(IOException e){}
+    
+}
     
 }
