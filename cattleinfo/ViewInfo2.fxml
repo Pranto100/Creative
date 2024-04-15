@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cattleinfo.ViewInfoController">
+   <children>
+      <Text layoutX="82.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cattle info :" wrappingWidth="82.509765625" />
+      <Text layoutX="76.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cattle ID :" />
+      <TextField layoutX="142.0" layoutY="65.0" text="####" />
+      <Text layoutX="56.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cattle height :" />
+      <TextField layoutX="142.0" layoutY="95.0" text="####" />
+      <Text layoutX="55.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cattle weight :" />
+      <TextField layoutX="142.0" layoutY="125.0" text="####" />
+      <Button layoutX="35.0" layoutY="239.0" mnemonicParsing="false" onAction="#BackToCattleInfoOnClicked" text="Back" />
+      <Text layoutX="28.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cattle Seller Name :" />
+      <TextField layoutX="142.0" layoutY="155.0" text="####" />
+      <Text layoutX="51.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cattle Seller ID :" />
+      <TextField layoutX="142.0" layoutY="188.0" text="####" />
+   </children>
+</AnchorPane>
