@@ -5,8 +5,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.QcmFeedbackController">
    <children>
       <Label layoutX="78.0" layoutY="75.0" text="Feedback" />
       <Label layoutX="78.0" layoutY="112.0" text="Write your suggestions below" />
@@ -14,5 +13,6 @@
       <Label layoutX="264.0" layoutY="112.0" text="Employee ID (Optional)" />
       <TextField fx:id="employeeIDTextfield" layoutX="396.0" layoutY="108.0" prefHeight="25.0" prefWidth="113.0" />
       <Button fx:id="submtButton" layoutX="454.0" layoutY="253.0" mnemonicParsing="false" onAction="#onqcmFeedbackSubmitButtonClicked" text="Submit" />
+      <Button layoutX="516.0" layoutY="362.0" mnemonicParsing="false" onAction="#onqcmFeedbackBackButtonClicked" prefHeight="33.0" prefWidth="76.0" text="Back" />
    </children>
 </AnchorPane>

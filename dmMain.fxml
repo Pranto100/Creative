@@ -13,5 +13,7 @@
       <Button layoutX="64.0" layoutY="210.0" mnemonicParsing="false" onAction="#ondmCattleImportButtonClicked" prefHeight="32.0" prefWidth="100.0" text="Cattle Import" />
       <Button layoutX="64.0" layoutY="251.0" mnemonicParsing="false" onAction="#ondmReportButtonClicked" prefHeight="32.0" prefWidth="100.0" text="Report" />
       <Label layoutX="387.0" layoutY="45.0" text="Logged in as: Delivery Manager" />
+      <Label layoutX="387.0" layoutY="73.0" prefHeight="17.0" prefWidth="50.0" text="Not you?" />
+      <Button layoutX="446.0" layoutY="66.0" mnemonicParsing="false" onAction="#ondmSwitchButtonClicked" prefHeight="32.0" prefWidth="100.0" text="Switch Account" />
    </children>
 </AnchorPane>

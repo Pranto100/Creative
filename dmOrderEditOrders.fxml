@@ -7,7 +7,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="449.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="AnchorPane" prefHeight="449.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.DmOrderEditOrdersController">
    <children>
       <TableView layoutX="61.0" layoutY="205.0" prefHeight="221.0" prefWidth="418.0">
          <columns>
@@ -28,5 +28,6 @@
       <Button layoutX="433.0" layoutY="75.0" mnemonicParsing="false" onAction="#ondmOrdersAssignButtonClicked" prefHeight="25.0" prefWidth="73.0" text="Assign" />
       <Label layoutX="244.0" layoutY="79.0" text="Cattle ID" />
       <TextField fx:id="assignCattleIDTextfield" layoutX="300.0" layoutY="75.0" prefHeight="25.0" prefWidth="73.0" />
+      <Button layoutX="493.0" layoutY="335.0" mnemonicParsing="false" onAction="#ondmOrderEditOrdersBackButtonClicked" prefHeight="33.0" prefWidth="76.0" text="Back" />
    </children>
 </AnchorPane>
