@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="611.0" prefWidth="698.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="Mainpkg.IMViewInventoryDetailsSceneController">
+   <children>
+      <TextArea fx:id="inventoryOutputTextArea" layoutX="58.0" layoutY="209.0" prefHeight="235.0" prefWidth="560.0" />
+      <Label layoutX="447.0" layoutY="62.0" text="Inventory details" textFill="#610c0c">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
