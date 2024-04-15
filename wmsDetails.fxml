@@ -5,8 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="WmsDetailsController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WmsDetailsController">
    <children>
       <Text layoutX="66.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome" wrappingWidth="69.00000068545341" />
       <Text layoutX="42.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Supervisor Name:" />
@@ -15,5 +14,7 @@
       <TextField layoutX="151.0" layoutY="103.0" text="####" />
       <Button fx:id="button11" layoutX="195.0" layoutY="139.0" onAction="#handleButtonAction" text="Back" />
       <Button fx:id="button" layoutX="245.0" layoutY="139.0" onAction="#handleButtonAction" text="View Details" />
+      <Button layoutX="455.0" layoutY="326.0" mnemonicParsing="false" text="Switch to soDetails" />
+      <Text layoutX="483.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="wmsDetails" />
    </children>
 </AnchorPane>
