@@ -9,23 +9,23 @@
 
 <AnchorPane id="AnchorPane" prefHeight="449.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.DmOrderEditOrdersController">
    <children>
-      <TableView layoutX="61.0" layoutY="205.0" prefHeight="221.0" prefWidth="418.0">
+      <TableView fx:id="dmOrderTableview" layoutX="61.0" layoutY="205.0" prefHeight="221.0" prefWidth="418.0">
          <columns>
-            <TableColumn prefWidth="75.0" text="Order ID" />
-            <TableColumn prefWidth="75.0" text="Cattle ID" />
-            <TableColumn prefWidth="75.0" text="Order Status" />
-            <TableColumn prefWidth="75.0" text="Seller ID" />
-            <TableColumn prefWidth="116.0" text="Cattle Weight" />
+            <TableColumn fx:id="dmOrderOrderIDcol" prefWidth="75.0" text="Order ID" />
+            <TableColumn fx:id="dmOrderCattleIDcol" prefWidth="75.0" text="Cattle ID" />
+            <TableColumn fx:id="dmOrderOrderStatuscol" prefWidth="75.0" text="Order Status" />
+            <TableColumn fx:id="dmOrderSellerIDcol" prefWidth="75.0" text="Seller ID" />
+            <TableColumn fx:id="dmOrderCattleWeightcol" prefWidth="116.0" text="Cattle Weight" />
          </columns>
       </TableView>
-      <Button layoutX="286.0" layoutY="169.0" mnemonicParsing="false" onAction="#ondmOrdersSaveButtonClicked" text="Save" />
-      <Button layoutX="360.0" layoutY="169.0" mnemonicParsing="false" onAction="#ondmOrdersDontSaveButtonClicked" text="Don't Save" />
+      <Button layoutX="286.0" layoutY="169.0" mnemonicParsing="false" onAction="#ondmOrderSaveButtonClicked" text="Save" />
+      <Button layoutX="360.0" layoutY="169.0" mnemonicParsing="false" onAction="#ondmOrderDontSaveButtonClicked" text="Don't Save" />
       <Label layoutX="61.0" layoutY="48.0" text="Delete Order ID" />
       <TextField fx:id="deleteOrderIDTextfield" layoutX="157.0" layoutY="44.0" prefHeight="25.0" prefWidth="73.0" />
-      <Button layoutX="433.0" layoutY="46.0" mnemonicParsing="false" onAction="#ondmOrdersDeleteButtonClicked" prefHeight="25.0" prefWidth="73.0" text="Delete" />
+      <Button layoutX="433.0" layoutY="46.0" mnemonicParsing="false" onAction="#ondmOrderDeleteButtonClicked" prefHeight="25.0" prefWidth="73.0" text="Delete" />
       <Label layoutX="61.0" layoutY="77.0" text="Assign Order ID" />
       <TextField fx:id="assignOrderIDTextfield" layoutX="157.0" layoutY="73.0" prefHeight="25.0" prefWidth="73.0" />
-      <Button layoutX="433.0" layoutY="75.0" mnemonicParsing="false" onAction="#ondmOrdersAssignButtonClicked" prefHeight="25.0" prefWidth="73.0" text="Assign" />
+      <Button layoutX="433.0" layoutY="75.0" mnemonicParsing="false" onAction="#ondmOrderAssignButtonClicked" prefHeight="25.0" prefWidth="73.0" text="Assign" />
       <Label layoutX="244.0" layoutY="79.0" text="Cattle ID" />
       <TextField fx:id="assignCattleIDTextfield" layoutX="300.0" layoutY="75.0" prefHeight="25.0" prefWidth="73.0" />
       <Button layoutX="493.0" layoutY="335.0" mnemonicParsing="false" onAction="#ondmOrderEditOrdersBackButtonClicked" prefHeight="33.0" prefWidth="76.0" text="Back" />

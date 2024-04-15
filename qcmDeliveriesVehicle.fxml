@@ -5,8 +5,7 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.QcmDeliveriesVehicleController">
    <children>
       <TableView layoutX="60.0" layoutY="60.0" prefHeight="200.0" prefWidth="318.0">
          <columns>
@@ -16,7 +15,7 @@
          </columns>
       </TableView>
       <Button layoutX="60.0" layoutY="272.0" mnemonicParsing="false" onAction="#onqcmDeliveriesVehicleEditButtonClicked" text="Edit" />
-      <Button layoutX="337.0" layoutY="272.0" mnemonicParsing="false" onAction="#onqcmDeliveriesVehicleBackButtonClicked" text="Back" />
       <Button layoutX="116.0" layoutY="272.0" mnemonicParsing="false" onAction="#onqcmDeliveriesVehicleFlagButtonClicked" text="Flag" />
+      <Button layoutX="506.0" layoutY="352.0" mnemonicParsing="false" onAction="#onqcmDeliveriesVehicleBackButtonClicked" prefHeight="33.0" prefWidth="76.0" text="Back" />
    </children>
 </AnchorPane>
